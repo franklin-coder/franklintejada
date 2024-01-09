@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Franklin || Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <script>
+      const bubble = document.createElement("div");
+      bubble.style.position = "fixed";
+      bubble.style.width = "25px";
+      bubble.style.height = "25px";
+      bubble.style.borderRadius = "50%";
+      bubble.style.pointerEvents = "none";
+      bubble.style.border = "2px solid #915eff";
+      document.body.appendChild(bubble);
+    
+      let angle = 0; // Ángulo inicial
+      const radius = 4; // Radio del círculo
+    
+      function changeShadow() {
+        const x = radius * Math.cos(angle * Math.PI / 180); // Coordenada X
+        const y = radius * Math.sin(angle * Math.PI / 180); // Coordenada Y
+        //bubble.style.boxShadow = `${x}px ${y}px 4px #915eff`;
+        bubble.style.boxShadow = `${x}px ${y}px 4px #ffffff`;
+        angle = (angle + 10) % 360; // Cambiar el ángulo
+      }
+    
+      document.addEventListener("mousemove", (e) => {
+        bubble.style.left = e.clientX - 10 + "px";
+        bubble.style.top = e.clientY - 10 + "px";
+      });
+    
+      // Iniciar el cambio de sombra al cargar la página
+      setInterval(changeShadow, 100); // Cambiar cada 100 milisegundos para un movimiento suave
+    </script>
+    
+
+  </body>
+</html>
