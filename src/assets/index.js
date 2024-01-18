@@ -34,6 +34,8 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+// import linkedin from "./linkedin.png";
+import linkedin from "./linkedin.png";
 
 export {
   logo,
@@ -70,4 +72,6 @@ export {
   XD,
   C,
   Unity,
+  linkedin
+  
 };

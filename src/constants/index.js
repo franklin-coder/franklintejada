@@ -28,6 +28,7 @@ import {
   XD,
   C,
   Unity,
+  linkedin
 } from "../assets";
 
 export const navLinks = [

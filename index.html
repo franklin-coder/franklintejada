@@ -1,45 +1,55 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Franklin || Portfolio</title>
-  </head>
-  <body>
+</head>
+<body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
 
     <script>
-      const bubble = document.createElement("div");
-      bubble.style.position = "fixed";
-      bubble.style.width = "25px";
-      bubble.style.height = "25px";
-      bubble.style.borderRadius = "50%";
-      bubble.style.pointerEvents = "none";
-      bubble.style.border = "2px solid #915eff";
-      document.body.appendChild(bubble);
-    
-      let angle = 0; // Ángulo inicial
-      const radius = 4; // Radio del círculo
-    
-      function changeShadow() {
-        const x = radius * Math.cos(angle * Math.PI / 180); // Coordenada X
-        const y = radius * Math.sin(angle * Math.PI / 180); // Coordenada Y
-        //bubble.style.boxShadow = `${x}px ${y}px 4px #915eff`;
-        bubble.style.boxShadow = `${x}px ${y}px 4px #ffffff`;
-        angle = (angle + 10) % 360; // Cambiar el ángulo
-      }
-    
-      document.addEventListener("mousemove", (e) => {
-        bubble.style.left = e.clientX - 10 + "px";
-        bubble.style.top = e.clientY - 10 + "px";
-      });
-    
-      // Iniciar el cambio de sombra al cargar la página
-      setInterval(changeShadow, 100); // Cambiar cada 100 milisegundos para un movimiento suave
-    </script>
-    
+        const bubble = document.createElement("div");
+        bubble.style.position = "fixed";
+        bubble.style.width = "25px";
+        bubble.style.height = "25px";
+        bubble.style.borderRadius = "50%";
+        bubble.style.pointerEvents = "none";
+        bubble.style.border = "2px solid #915eff";
+        document.body.appendChild(bubble);
 
-  </body>
+        // Crear un nuevo div para el efecto de seguimiento
+        const trailingBubble = document.createElement("div");
+        trailingBubble.style.position = "fixed";
+        trailingBubble.style.width = "35px"; // Hacerlo más grande que bubble
+        trailingBubble.style.height = "35px"; // Hacerlo más grande que bubble
+        trailingBubble.style.borderRadius = "50%";
+        trailingBubble.style.pointerEvents = "none";
+        trailingBubble.style.border = "1px solid #915eff"; // Borde más delgado
+        document.body.appendChild(trailingBubble);
+
+        let lastMouseX, lastMouseY;
+        const delay = 50; // Retraso en milisegundos
+
+        document.addEventListener("mousemove", (e) => {
+            // Centrar bubble en la posición del ratón
+            bubble.style.left = (e.clientX - bubble.offsetWidth / 2) + "px";
+            bubble.style.top = (e.clientY - bubble.offsetHeight / 2) + "px";
+
+            // Actualizar las coordenadas del ratón
+            lastMouseX = e.clientX;
+            lastMouseY = e.clientY;
+
+            // Función para mover el trailingBubble después de un retraso
+            setTimeout(() => {
+                // Centrar trailingBubble en la posición del ratón
+                trailingBubble.style.left = (lastMouseX - trailingBubble.offsetWidth / 2) + "px";
+                trailingBubble.style.top = (lastMouseY - trailingBubble.offsetHeight / 2) + "px";
+            }, delay);
+        });
+
+    </script>
+</body>
 </html>
