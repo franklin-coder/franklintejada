@@ -10,10 +10,7 @@ const Footer = () => {
                 </a>
                 <a href="https://ca.linkedin.com/in/franklin-d-tejada-24a033117/en">
                     <img src={linkedin} alt="GitHub" style={{ height: '50px', paddingBottom:'10px', paddingRight:'5px'}} />
-                </a>
-                <a href="https://ca.linkedin.com/in/franklin-d-tejada-24a033117/en">
-                    <img src={linkedin} alt="GitHub" style={{ height: '50px', paddingBottom:'10px', paddingRight:'5px'}} />
-                </a>
+                </a>            
                 
             </div>
         </footer>

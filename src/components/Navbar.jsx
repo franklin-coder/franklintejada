@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { menu, close } from "../assets";
-import { logoo } from "../assets";
+import { menu, close, logoo } from "../assets";
+
 
 const Navbar = () => {
   const [active, SetActive] = useState(" ");
@@ -16,6 +16,7 @@ const Navbar = () => {
     }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="flex items-center">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -34,6 +35,7 @@ const Navbar = () => {
             </span>
           </p>
         </Link>
+        </div>
 
         <div>
           <a href="./Franklin_Tejada_Resume_2024.pdf">
@@ -43,6 +45,8 @@ const Navbar = () => {
           </a>
         </div>
 
+
+        <div className="flex items-center gap-4">
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
@@ -64,11 +68,13 @@ const Navbar = () => {
             className="w-[28px] h-[28px] object-obtain cursor-pointer"
             onClick={() => setToggle(!toggle)}
           />
+           </div>
           <div
             className={`${
               !toggle ? "hidden" : "flex"
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w[140px] z-10 rounded-xl`}
           >
+            <div className={`sm:hidden ${toggle ? "flex" : "hidden"} flex-col items-end gap-4`}>
             {/* segundo ul */}
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((link) => (
@@ -86,6 +92,7 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+            </div>
             {/* segundo ul */}
           </div>
         </div>

@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import logoo from "./logoo.svg";
+import perfil from "./perfil.jpg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -72,6 +73,7 @@ export {
   XD,
   C,
   Unity,
-  linkedin
+  linkedin,
+  perfil
   
 };

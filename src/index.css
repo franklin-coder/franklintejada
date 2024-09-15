@@ -283,6 +283,8 @@
 }
 
 
+
+
 /* Define la animación de rotación */
 @keyframes rotateShadow {
   0% {
@@ -301,6 +303,45 @@
     transform: rotate(0);
   }
 }
+
+/* Photo for small devices */
+
+/* Define el tamaño y color del emoji */
+#photo-controller {
+  font-size: 1.5rem;
+  display: inline-block;
+  position: relative;
+  padding: 15px;
+  border: 2px solid white;
+  
+  animation: scalePhoto 10s infinite alternate; /* Animación de escala */
+  box-sizing: border-box; /* Establece el modelo de caja para incluir el padding y el borde en el ancho y alto */
+  box-shadow: 0 0 10px rgb(255, 255, 255); 
+}
+#photo-controller::before{
+  
+  animation: rotateShadow2 20s linear infinite;
+ 
+}
+
+#photo-controller::after{
+  
+  animation: rotateShadow2 10s linear infinite;
+ 
+}
+
+/* Animación de escala para la foto */
+@keyframes scalePhoto {
+  from {
+    transform: scale(1);
+    border: 6px solid rgb(255, 255, 255);
+  }
+  to {
+    transform: scale(1.1);
+    border: 3px solid #915eff;
+  }
+}
+
 
 
 
@@ -323,5 +364,6 @@
 }
 
   /* SOCIAL LINKS */
+
 
 

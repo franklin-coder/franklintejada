@@ -1,0 +1,11 @@
+Model Information:
+* title:	Virtual Reality by tetra
+* source:	https://sketchfab.com/3d-models/virtual-reality-by-tetra-1a10be286b484d5689398dcbda913f88
+* author:	Tetra (https://sketchfab.com/Tetraart)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Virtual Reality by tetra" (https://sketchfab.com/3d-models/virtual-reality-by-tetra-1a10be286b484d5689398dcbda913f88) by Tetra (https://sketchfab.com/Tetraart) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

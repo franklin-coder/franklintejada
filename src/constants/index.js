@@ -28,7 +28,8 @@ import {
   XD,
   C,
   Unity,
-  linkedin
+  linkedin,
+  perfil
 } from "../assets";
 
 export const navLinks = [
@@ -201,7 +202,7 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/franklin-coder",
   },
   {
     name: "E-commerce",
@@ -222,7 +223,7 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/franklin-coder",
   },
   {
     name: "CRUD",
@@ -243,7 +244,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/franklin-coder",
   },
 ];
 

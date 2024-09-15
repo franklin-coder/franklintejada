@@ -7,7 +7,8 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile  }) => {
-   const computer = useGLTF("./desktop_pc/scene.gltf");
+  //  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const computer = useGLTF("./desktop_pc/scene.gltf");
 
   return (
     <mesh>
@@ -40,7 +41,7 @@ const Computers = ({ isMobile  }) => {
 
 
 
-const ComputersCanvas = () => {
+const ComputersCanvas = ({ lightIntensity, zoomEnabled }) => {
 
   const [isMobile, setIsMobile]= useState(false);
 
@@ -73,11 +74,12 @@ const ComputersCanvas = () => {
     >
       <Suspense fallback={<CanvasLoader />}>
       <OrbitControls
-          enableZoom={false}
+          enableZoom={zoomEnabled}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-          <Computers intensity={10} />
+          <Computers  />
+         <hemisphereLight intensity={lightIntensity} groundColor="black" /> 
       </Suspense>
       <Preload all />
     </Canvas>
