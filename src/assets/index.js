@@ -31,7 +31,9 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
+import chat_bot from "./chat_bot_clone.png";
+import edu_speak from "./edu_speak.png";
+import edu_speak1 from "./edu_speak1.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -74,6 +76,9 @@ export {
   C,
   Unity,
   linkedin,
-  perfil
+  perfil,
+  chat_bot,
+  edu_speak,
+  edu_speak1,
   
 };

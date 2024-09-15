@@ -20,6 +20,9 @@ import {
   tesla,
   shopify,
   carrent,
+  edu_speak,
+  edu_speak1,
+  chat_bot,
   jobit,
   tripguide,
   threejs,
@@ -162,7 +165,7 @@ const testimonials = [
     name: "Angela Torres",
     designation: "CEO",
     company: "Jalm S.A.S",
-    image: "https://scontent.fyvr3-1.fna.fbcdn.net/v/t39.30808-6/271895063_4805765662848578_3368241543930359984_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=rfGX50fgwa4AX-0VdoN&_nc_ht=scontent.fyvr3-1.fna&oh=00_AfCyw_Da7Bymd83eDZVRHftDhrUVGakpROqA8hKrRV1o6w&oe=6596B174",
+    image: "https://ii.ct-stc.com/1/logos/empresas/2018/09/06/064694783ab441448d3e145855687thumbnail.jpeg",
   },
   {
     testimonial:
@@ -178,31 +181,31 @@ const testimonials = [
     name: "Victor",
     designation: "BackEnd Developer",
     company: "Solera",
-    image: "https://media.licdn.com/dms/image/D4E0BAQFHhMFpgYTRSQ/company-logo_200_200/0/1688395501927/solera_mexico_logo?e=1712188800&v=beta&t=C-lVG8N2UHxITsw8uHS0PRbz08Euk72w7429jz061hU",
+    image: "https://mma.prnewswire.com/media/215922/solera_holdings_inc_logo.jpg?p=facebook",
   },
 ];
 
 const projects = [
   {
-    name: "Chat GPT Clone",
+    name: "Virtual Reality Simulator",
     description:
-      "Web platform mirroring AI chatbot capabilities via OpenAI API. Allows interact asking any topic, displays chat history, emphasizes user-friendly design, and supports project customization while maintaining original functionality.",
+      "EduSpeak is a VR platform that helps users improve public speaking by providing a realistic practice environment. It offers feedback on both verbal and non-verbal communication, helping users build confidence and refine their skills efficiently.",
     tags: [
       {
-        name: "reactjs",
+        name: "Unity",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Maya 3D",
         color: "green-text-gradient",
       },
       {
-        name: "Expressjs",
+        name: "XR Interaction Tool Kit",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/franklin-coder",
+    image: edu_speak,
+    source_code_link: "https://www.youtube.com/watch?v=S-LEdD_D1Uc ",
   },
   {
     name: "E-commerce",
@@ -218,32 +221,95 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/franklin-coder",
+    image: carrent,
+    source_code_link: "https://github.com/franklin-coder/ecommerce",
   },
   {
-    name: "CRUD",
+    name: "WordPress & Elementor",
     description:
-      "This is a CRUD application developed with Next.js, Express, and MongoDB. It boasts an intuitive user interface designed with CSS. Upon successful operations,include a confetti animation, enhancing user experience and engagement.",
+      "This is a dynamic website built with WordPress using Elementor, along with custom CSS and JavaScript for enhanced functionality. The design of the site, including images, videos, and banners, was created using Adobe Suite.",
     tags: [
       {
-        name: "nextjs",
+        name: "WordPress",
         color: "blue-text-gradient",
       },
       {
-        name: "Expressjs",
+        name: "Elementor",
         color: "green-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Adobe Suit",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
+    source_code_link: "https://recreacionjalm.com/",
+  },
+  {
+    name: "Dynamic Quiz",
+    description:
+      "This is an interactive quiz developed using Bootstrap and jQuery to create smooth animations. It includes a timer and displays the results at the end, showing the number of correct answers. Additionally, it features a small validation form that uses regular expressions to ensure proper input.",
+    tags: [
+      {
+        name: "HTML5 & CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JQuery",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vanilla Javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+    source_code_link: "https://github.com/franklin-coder/Interactive_quiz_JQuery",
+  },
+  {
+    name: "Hotel reservation & login",
+    description:
+      "This is an ideal application for a hotel, offering real-time room quotes and live updates on local weather by consuming a weather prediction API. It also features a login system with regular expressions for input validation, allowing users to personalize their experience on the platform.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS3",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vanilla Javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: chat_bot,
+    source_code_link: "https://github.com/franklin-coder/Hotel_Web_site-",
+  },
+  {
+    name: "2D Game Level-1",
+    description:
+      "This game was developed by applying different physics to the enemies and implementing core mechanics such as movement, jumping, collisions, and multiple canvases for menus and score tracking. It was so much fun to create that I’m already thinking of adding a couple more levels!",
+    tags: [
+      {
+        name: "Unity",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Adobe Suit",
+        color: "green-text-gradient",
+      },
+      {
+        name: "C#",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: edu_speak1,
     source_code_link: "https://github.com/franklin-coder",
   },
 ];
