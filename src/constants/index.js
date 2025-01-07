@@ -118,13 +118,24 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Freelance Media and Web Developer",
-    company_name: "Foto Go Colombia, MakeArt Events",
+    title: "Virtual Reality Developer (Volunteer)",
+    company_name: "Skill Canada",
+    icon: web,
+    iconBg: "#383E56",
+    date: "current job",
+    points: [
+      "Spearheaded the development of a Public Speaking Simulator in virtual reality, from conceptualization to deployment.",
+      "Designed immersive VR scenarios and gameplay mechanics, ensuring engaging and realistic user experiences.",
+      "Programmed and implemented core logic using Unity (C#) and XR Interaction Toolkit, integrating advanced features such as hand and head tracking.",
+    ],
+  },
+  {
+    title: "Media and Web Developer",
+    company_name: "Jalm Investmensts",
     icon: web,
     iconBg: "#383E56",
     date: "Aug 2022 - Jan 2024",
     points: [
-      "Freelancing as a Media and Web Developer for Foto Go Colombia and MakeArt Events, etc.",
       "Building and maintaining web applications using Javascript and associated technologies.",
       "Collaborating closely with multifunctional teams, including designers and product managers, to deliver high-quality products.",
       "Implementing responsive design strategies ensuring compatibility across various browsers.",
@@ -162,8 +173,8 @@ const testimonials = [
   {
     testimonial:
       "Having previously worked with Franklin at Jalm as a product designer, I was already familiar with her great focus on quality, attention to detail, and ability to bring a creative idea to life. Franklin helped me turn concepts in my head into reality by redesigning a business logo, branding, and website.",
-    name: "Angela Torres",
-    designation: "CEO",
+    name: "MONICA M",
+    designation: "CTO",
     company: "Jalm S.A.S",
     image: "https://ii.ct-stc.com/1/logos/empresas/2018/09/06/064694783ab441448d3e145855687thumbnail.jpeg",
   },

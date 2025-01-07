@@ -10,6 +10,7 @@ import { slideIn } from "../utils/motion";
 //NZ20ATyGAxMaC4yfD
 //template_sz1y6bv
 //service_dwzfi2n
+// new service_havmqi5
 
 const Contact = () => {
   const formRef = useRef();
@@ -37,7 +38,7 @@ const Contact = () => {
 
     emailjs
       .send(
-       'service_dwzfi2n',
+       'service_havmqi5',
         'template_sz1y6bv',
         {
           from_name: form.name,
