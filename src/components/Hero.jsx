@@ -7,7 +7,7 @@ import * as THREE from "three";
 
 const Hero = () => {
   const [lightIntensity, setLightIntensity] = useState(9.15);
-  const [zoomEnabled, setZoomEnabled] = useState(true);
+  const [zoomEnabled, setZoomEnabled] = useState(false);
   const [isSmallDevice, setIsSmallDevice] = useState(false);
   const smallDeviceSceneRef = useRef(null); // Referencia para la escena en dispositivos pequeños
 

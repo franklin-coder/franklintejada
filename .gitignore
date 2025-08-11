@@ -63,3 +63,4 @@ coverage/
 # Optional testing files
 *.test.js
 *.spec.js
+.vercel

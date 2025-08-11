@@ -38,7 +38,7 @@ const Navbar = () => {
         </div>
 
         <div>
-          <a href="./Franklin_Tejada_Resume_2024.pdf">
+          <a href="./Franklin_Tejada_Resume.pdf">
           <button className=" ">
           <span className='game-controller bg-[#915eff01] text-white font-bold rounded-full'><span className="text-[18px]">  &darr; CV  </span> </span> 
           </button>
