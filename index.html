@@ -18,6 +18,7 @@
         bubble.style.borderRadius = "50%";
         bubble.style.pointerEvents = "none";
         bubble.style.border = "2px solid #915eff";
+        bubble.style.display = "none"; // Oculto por defecto
         document.body.appendChild(bubble);
 
         // Crear un nuevo div para el efecto de seguimiento
@@ -28,28 +29,37 @@
         trailingBubble.style.borderRadius = "50%";
         trailingBubble.style.pointerEvents = "none";
         trailingBubble.style.border = "1px solid #915eff"; // Borde más delgado
+        trailingBubble.style.display = "none"; // Oculto por defecto
         document.body.appendChild(trailingBubble);
 
-        let lastMouseX, lastMouseY;
-        const delay = 50; // Retraso en milisegundos
+        // Detectar si el dispositivo es pequeño
+        const isSmallDevice = window.matchMedia("(max-width: 500px)").matches;
 
-        document.addEventListener("mousemove", (e) => {
-            // Centrar bubble en la posición del ratón
-            bubble.style.left = (e.clientX - bubble.offsetWidth / 2) + "px";
-            bubble.style.top = (e.clientY - bubble.offsetHeight / 2) + "px";
+        if (!isSmallDevice) {
+            // Hacer visible los elementos en dispositivos no pequeños
+            bubble.style.display = "block";
+            trailingBubble.style.display = "block";
 
-            // Actualizar las coordenadas del ratón
-            lastMouseX = e.clientX;
-            lastMouseY = e.clientY;
+            let lastMouseX, lastMouseY;
+            const delay = 50; // Retraso en milisegundos
 
-            // Función para mover el trailingBubble después de un retraso
-            setTimeout(() => {
-                // Centrar trailingBubble en la posición del ratón
-                trailingBubble.style.left = (lastMouseX - trailingBubble.offsetWidth / 2) + "px";
-                trailingBubble.style.top = (lastMouseY - trailingBubble.offsetHeight / 2) + "px";
-            }, delay);
-        });
+            document.addEventListener("mousemove", (e) => {
+                // Centrar bubble en la posición del ratón
+                bubble.style.left = (e.clientX - bubble.offsetWidth / 2) + "px";
+                bubble.style.top = (e.clientY - bubble.offsetHeight / 2) + "px";
 
+                // Actualizar las coordenadas del ratón
+                lastMouseX = e.clientX;
+                lastMouseY = e.clientY;
+
+                // Función para mover el trailingBubble después de un retraso
+                setTimeout(() => {
+                    // Centrar trailingBubble en la posición del ratón
+                    trailingBubble.style.left = (lastMouseX - trailingBubble.offsetWidth / 2) + "px";
+                    trailingBubble.style.top = (lastMouseY - trailingBubble.offsetHeight / 2) + "px";
+                }, delay);
+            });
+        }
     </script>
 </body>
 </html>

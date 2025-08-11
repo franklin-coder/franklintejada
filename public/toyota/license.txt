@@ -1,0 +1,11 @@
+Model Information:
+* title:	4x4 toyota Bj
+* source:	https://sketchfab.com/3d-models/4x4-toyota-bj-32e23077157a4cd397bc1e5338b44808
+* author:	Configcars / maxipub (https://sketchfab.com/maxipub)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "4x4 toyota Bj" (https://sketchfab.com/3d-models/4x4-toyota-bj-32e23077157a4cd397bc1e5338b44808) by Configcars / maxipub (https://sketchfab.com/maxipub) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
