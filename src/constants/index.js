@@ -117,12 +117,29 @@ const technologies = [
 ];
 
 const experiences = [
+
+  {
+  title: "Full-Stack Developer Intern",
+  company_name: "Leavoda",
+  icon: creator,
+  iconBg: "#383E56",
+  date: "Jun 2025- Present",
+  points: [
+    "Assisted in planning and executing community events to promote resident engagement and well-being.",
+    "Developed advertising materials and managed lead generation activities to attract new residents.",
+    "Built trust and rapport with potential clients through tours, visits, and personalized follow-up.",
+    "Maintained and updated the community relations database, ensuring accurate and efficient information management.",
+    "Coordinated move-in/move-out processes, orientations, and related administrative paperwork for new residents.",
+    "Created marketing content and social media posts to enhance community communication.",
+    "Demonstrated strong organizational, communication, and customer service skills in a senior living environment."
+  ],
+},
 {
   title: "Community Relations Assistant",
   company_name: "Berwick Retirement Communities",
   icon: creator,
   iconBg: "#383E56",
-  date: "Start Date - End Date (or 'Present' if currently working)",
+  date: "Apr 2025 -Present",
   points: [
     "Assisted in planning and executing community events to promote resident engagement and well-being.",
     "Developed advertising materials and managed lead generation activities to attract new residents.",
